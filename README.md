@@ -112,18 +112,28 @@ Simply double-click `index.html` or open it with any modern web browser.
 
 This project is configured with a GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) that automatically builds and deploys changes pushed to the `main` branch.
 
-### Fixing GitHub Pages Action Deployment
+### Setup GitHub Pages Deployment
 
-If you see an error such as `Get Pages site failed. Please verify that the repository has Pages enabled and configured to build using GitHub Actions`:
+GitHub requires you to enable Pages once in your repository settings. You have two easy ways to deploy:
 
+#### Option A: Deploy via GitHub Actions (Recommended)
 1. Go to your repository on GitHub: **Settings** > **Pages**
-   - URL: `https://github.com/7okesh/.sneakers-E-commerce-website/settings/pages`
+   - Direct link: `https://github.com/7okesh/.sneakers-E-commerce-website/settings/pages`
 2. Under **Build and deployment** > **Source**, click the dropdown and select **GitHub Actions**.
-3. Re-run the failed workflow in the **Actions** tab (or push a new commit).
-4. Once completed, your website will be live at:
-   ```text
-   https://7okesh.github.io/.sneakers-E-commerce-website/
-   ```
+3. Go to the **Actions** tab and re-run the latest workflow (or push a new commit).
+
+#### Option B: Deploy directly from the `gh-pages` branch
+1. Go to: `https://github.com/7okesh/.sneakers-E-commerce-website/settings/pages`
+2. Under **Build and deployment** > **Source**, keep **Deploy from a branch**.
+3. Under **Branch**, select **`gh-pages`** and folder **`/ (root)`**, then click **Save**.
+
+---
+
+### 🌐 Live Website URL
+Once either option completes, your website will be live at:
+```text
+https://7okesh.github.io/.sneakers-E-commerce-website/
+```
 
 ---
 
