@@ -2,7 +2,6 @@
 
 A sleek, responsive, and modern front-end e-commerce web application for sneakers built with pure **HTML5**, **CSS3**, and vanilla **JavaScript (ES6+)**.
 
-[![Deploy to GitHub Pages](https://github.com/7okesh/.sneakers-E-commerce-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/7okesh/.sneakers-E-commerce-website/actions/workflows/deploy.yml)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://7okesh.github.io/.sneakers-E-commerce-website/)
 
 ---
@@ -14,8 +13,6 @@ A sleek, responsive, and modern front-end e-commerce web application for sneaker
 - [Technologies Used](#-technologies-used)
 - [Project Structure](#-project-structure)
 - [Getting Started Locally](#-getting-started-locally)
-- [Deployment via GitHub Pages](#-deployment-via-github-pages)
-  - [Fixing Action Deployment](#fixing-github-pages-action-deployment)
 - [Author](#-author)
 
 ---
@@ -56,7 +53,6 @@ A sleek, responsive, and modern front-end e-commerce web application for sneaker
 - **HTML5**: Semantic web structure and accessible layout.
 - **CSS3**: Modern layout (Flexbox), CSS positioning, animations, and custom styling.
 - **JavaScript (ES6+)**: Dynamic DOM manipulation, state handling, and event listeners for slider and modal transitions.
-- **GitHub Actions & GitHub Pages**: Continuous integration and automated deployment pipeline.
 
 ---
 
@@ -66,7 +62,7 @@ A sleek, responsive, and modern front-end e-commerce web application for sneaker
 .sneakers-E-commerce-website/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml        # Automated GitHub Pages CI/CD pipeline
+│       └── deploy.yml        # GitHub Pages workflow
 ├── img/                      # Product and icon asset images
 │   ├── air.png
 │   ├── air2.png
@@ -105,35 +101,6 @@ npx serve .
 
 ### Option 3: Direct Open
 Simply double-click `index.html` or open it with any modern web browser.
-
----
-
-## 🌐 Deployment via GitHub Pages
-
-This project is configured with a GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) that automatically builds and deploys changes pushed to the `main` branch.
-
-### Setup GitHub Pages Deployment
-
-GitHub requires you to enable Pages once in your repository settings. You have two easy ways to deploy:
-
-#### Option A: Deploy via GitHub Actions (Recommended)
-1. Go to your repository on GitHub: **Settings** > **Pages**
-   - Direct link: `https://github.com/7okesh/.sneakers-E-commerce-website/settings/pages`
-2. Under **Build and deployment** > **Source**, click the dropdown and select **GitHub Actions**.
-3. Go to the **Actions** tab and re-run the latest workflow (or push a new commit).
-
-#### Option B: Deploy directly from the `gh-pages` branch
-1. Go to: `https://github.com/7okesh/.sneakers-E-commerce-website/settings/pages`
-2. Under **Build and deployment** > **Source**, keep **Deploy from a branch**.
-3. Under **Branch**, select **`gh-pages`** and folder **`/ (root)`**, then click **Save**.
-
----
-
-### 🌐 Live Website URL
-Once either option completes, your website will be live at:
-```text
-https://7okesh.github.io/.sneakers-E-commerce-website/
-```
 
 ---
 
